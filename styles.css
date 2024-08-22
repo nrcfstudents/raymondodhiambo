@@ -7,7 +7,7 @@
 
 /* Body styling */
 body {
-    background-color: lime;
+    background-color: lightskyblue;
     font-family: cursive;
 }
 
@@ -275,4 +275,72 @@ h1{
 .footer-bottom {
   font-size: 16px;
   margin-top: 20px;
+}
+
+/* Skills & Education Section Styling */
+.skills-education-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Subtle gradient background */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin: 30px 0;
+}
+
+.skills, .education {
+    width: 48%; /* Each section takes up 48% of the width */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Shadow for individual sections */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.skills:hover, .education:hover {
+    transform: translateY(-10px); /* Lift on hover */
+}
+
+.skills h2, .education h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333; /* Dark text color */
+    border-bottom: 2px solid #4CAF50; /* Green underline for Skills */
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.education h2 {
+    border-bottom-color: #ff9800; /* Orange underline for Education */
+}
+
+.skills ul, .education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li, .education ul li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #555; /* Medium text color */
+    padding-left: 30px; /* Space for custom icons */
+    position: relative;
+}
+
+.skills ul li::before {
+    content: "🚀 "; /* Rocket icon for skills */
+    color: #4CAF50; /* Green color */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+}
+
+.education ul li::before {
+    content: "📚 "; /* Book icon for education */
+    color: #ff9800; /* Orange color */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
 }
